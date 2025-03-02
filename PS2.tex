@@ -1,0 +1,62 @@
+%------------%
+%  Preamble  %
+%------------%
+
+\documentclass[final,11pt]{article}
+\usepackage[paperwidth=9.0in, top=1.2in, bottom=1.2in, left=1.2in, right=1.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{mathpazo}
+\usepackage{threeparttable}
+\usepackage{eurosym}
+\usepackage[colorlinks, linkcolor=blue, anchorcolor=blue, citecolor=blue]{hyperref}
+
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\arraycolsep}{10pt}
+\setlength\headheight{0.5cm}
+\setlength\headsep{0.8cm}
+\setlength\footskip{1.0cm}
+\setlength{\parindent}{0em}
+\pagestyle{fancy}
+\chead{\textcolor[rgb]{0.5,0.5,0.5}{\sc Spring 2025: ECON 6100}}
+
+%------------%
+%  Document  %
+%------------%
+
+\begin{document}
+\thispagestyle{empty}
+\begin{spacing}{1.25}
+
+\textbf{Your Name:\hfill Problem Set 2, Due: Mar. 18, 2025}\\
+
+(1) Use the probability integral transformation method to simulate from the distribution
+\begin{gather}
+    f(x) = 
+    \begin{cases}
+        \frac{2}{a^2}x,  & \text{if }0\leq x\leq a \\
+        0, & \text{otherwise}
+    \end{cases}
+\end{gather}
+where $a>0$. Set a value for $a$, simulate various sample sizes, and compare results to the true distribution.
+
+\newpage
+
+(2) Generate samples from the distribution
+\begin{gather}
+    f(x)=\frac{2}{3}e^{-2x}+2e^{-3x}
+\end{gather}
+using the finite mixture approach.
+
+\newpage
+
+(3) Draw 500 observations from Beta$(3,3)$ using the accept-reject algorithm. Compute the mean and variance of the sample and compare them to the true values.
+
+\end{spacing}
+\end{document}
